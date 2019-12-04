@@ -21,6 +21,11 @@ struct UserDefaultsKeys {
 
 extension UserDefaults {
     
+    var hasSeenIntro: Bool {
+        get { return bool(forKey: #function) }
+        set { set(newValue, forKey: #function) }
+    }
+    
     var trackingHits: Array<[String : AnyObject]> {
         get { return array(forKey: #function) as? [[String : AnyObject]] ?? [] }
         set { set(newValue, forKey: #function) }
