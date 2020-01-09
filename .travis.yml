@@ -12,6 +12,6 @@ install: pod install
 script:
 - |
   set -o pipefail
-  xcodebuild clean test -workspace Feestdagen en Vakanties.xcworkspace -scheme talk7 -destination "platform=iOS Simulator,name=iPhone 6 Plus" | xcpretty
+  xcodebuild clean test -workspace iOS-SDK.xcworkspace -scheme talk7 -destination "platform=iOS Simulator,name=iPhone 11" | xcpretty
 after_success:
 - ./scripts/travis/testflight.sh
