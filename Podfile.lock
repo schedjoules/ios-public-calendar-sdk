@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.9.0)
+  - Alamofire (4.9.1)
   - Result (4.0.1)
   - SchedJoulesApiClient (0.7.8):
     - Alamofire (~> 4.5)
@@ -9,22 +9,32 @@ PODS:
   - SDWebImage/Core (4.4.7)
 
 DEPENDENCIES:
-  - SchedJoulesApiClient (~> 0.7)
+  - SchedJoulesApiClient (from `https://github.com/schedjoules/swift-api-client.git`, branch `legacy-0.7.8`)
   - SDWebImage (~> 4.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - SDWebImage
+  trunk:
     - Alamofire
     - Result
-    - SchedJoulesApiClient
-    - SDWebImage
+
+EXTERNAL SOURCES:
+  SchedJoulesApiClient:
+    :branch: legacy-0.7.8
+    :git: https://github.com/schedjoules/swift-api-client.git
+
+CHECKOUT OPTIONS:
+  SchedJoulesApiClient:
+    :commit: 3190b587b1379604294329e75ce59bd1bea0f828
+    :git: https://github.com/schedjoules/swift-api-client.git
 
 SPEC CHECKSUMS:
-  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Result: a6e784bebf48b471d59cddc1adb81f41f678c487
   SchedJoulesApiClient: 0c37cbb48f9220e085d119b9f580a04cc3b9a7a3
   SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
 
-PODFILE CHECKSUM: 019309180a8611256af3fcbc7c19231a65102d26
+PODFILE CHECKSUM: 251d87b83e004e1921bf7b376b0e6c28ade058c1
 
 COCOAPODS: 1.9.3
